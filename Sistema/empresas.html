@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Auditory</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script language="JavaScript">
+   /*
+   A função Mascara tera como valores no argumento os dados inseridos no input (ou no evento onkeypress)
+   onkeypress="mascara(this, '## ####-####')"
+   onkeypress = chama uma função quando uma tecla é pressionada, no exemplo acima, chama a função mascara e define os valores do argumento na função
+   O primeiro valor é o this, é o Apontador/Indicador da Mascara, o '## ####-####' é o modelo / formato da mascara
+   no exemplo acima o # indica os números, e o - (hifen) o caracter que será inserido entre os números, ou seja, no exemplo acima o telefone ficara assim: 11-4000-3562
+   para o celular de são paulo o modelo deverá ser assim: '## #####-####' [11 98563-1254]
+   para o RG '##.###.###.# [40.123.456.7]
+   para o CPF '###.###.###.##' [789.456.123.10]
+   Ou seja esta mascara tem como objetivo inserir o hifen ou espaço automáticamente quando o usuário inserir o número do celular, cpf, rg, etc
+
+   lembrando que o hifen ou qualquer outro caracter é contado tambem, como: 11-4561-6543 temos 10 números e 2 hifens, por isso o valor de maxlength será 12
+   <input type="text" name="telefone" onkeypress="mascara(this, '## ####-####')" maxlength="12">
+   neste código não é possivel inserir () ou [], apenas . (ponto), - (hifén) ou espaço
+   */
+
+   function mascara(t, mask){
+   var i = t.value.length;
+   var saida = mask.substring(1,0);
+   var texto = mask.substring(i)
+   if (texto.substring(0,1) != saida){
+   t.value += texto.substring(0,1);
+   }
+   }
+   </script>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+  <div class="section table banner">
+    <div class="logo">
+      Auditory
+    </div>
+    <table class="u-full-width">
+      <thead>
+        <tr >
+          <th class="cod-titulo">Cód</th>
+          <th>Razão Social</th>
+          <th>Nome Fantasia</th>
+          <th>Endereço</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cod">001</td>
+          <td class="razao-social">Vale das Frutas</td>
+          <td class="nome-fantasia">Vale das Frutas</td>
+          <td class="local">San Francisco</td>
+        </tr>
+        <tr>
+          <td class="cod">001</td>
+          <td class="razao-social">Vale das Frutas</td>
+          <td class="nome-fantasia">Vale das Frutas</td>
+          <td class="local">San Francisco</td>
+        </tr>  <tr>
+            <td class="cod">001</td>
+            <td class="razao-social">Vale das Frutas</td>
+            <td class="nome-fantasia">Vale das Frutas</td>
+            <td class="local">San Francisco</td>
+          </tr>  <tr>
+              <td class="cod">001</td>
+              <td class="razao-social">Vale das Frutas</td>
+              <td class="nome-fantasia">Vale das Frutas</td>
+              <td class="local">San Francisco</td>
+            </tr>  <tr>
+                <td class="cod">001</td>
+                <td class="razao-social">Vale das Frutas</td>
+                <td class="nome-fantasia">Vale das Frutas</td>
+                <td class="local">San Francisco</td>
+              </tr>  <tr>
+                  <td class="cod">001</td>
+                  <td class="razao-social">Vale das Frutas</td>
+                  <td class="nome-fantasia">Vale das Frutas</td>
+                  <td class="local">San Francisco</td>
+                </tr>  <tr>
+                    <td class="cod">001</td>
+                    <td class="razao-social">Vale das Frutas</td>
+                    <td class="nome-fantasia">Vale das Frutas</td>
+                    <td class="local">San Francisco</td>
+                  </tr>  <tr>
+                      <td class="cod">001</td>
+                      <td class="razao-social">Vale das Frutas</td>
+                      <td class="nome-fantasia">Vale das Frutas</td>
+                      <td class="local">San Francisco</td>
+                    </tr>  <tr>
+                        <td class="cod">001</td>
+                        <td class="razao-social">Vale das Frutas</td>
+                        <td class="nome-fantasia">Vale das Frutas</td>
+                        <td class="local">San Francisco</td>
+                      </tr>  <tr>
+                          <td class="cod">001</td>
+                          <td class="razao-social">Vale das Frutas</td>
+                          <td class="nome-fantasia">Vale das Frutas</td>
+                          <td class="local">San Francisco</td>
+                        </tr>  <tr>
+                            <td class="cod">001</td>
+                            <td class="razao-social">Vale das Frutas</td>
+                            <td class="nome-fantasia">Vale das Frutas</td>
+                            <td class="local">San Francisco</td>
+                          </tr>  <tr>
+                              <td class="cod">001</td>
+                              <td class="razao-social">Vale das Frutas</td>
+                              <td class="nome-fantasia">Vale das Frutas</td>
+                              <td class="local">San Francisco</td>
+                            </tr>  <tr>
+                                <td class="cod">001</td>
+                                <td class="razao-social">Vale das Frutas</td>
+                                <td class="nome-fantasia">Vale das Frutas</td>
+                                <td class="local">San Francisco</td>
+                              </tr>
+
+      </tbody>
+    </table>
+  </div>
+  <div class="section form">
+    <div class="container form">
+      <div class="row">
+        <div class="eleven columns">
+        <nav class="menu">
+          <ul>
+            <li><a class="nav-item" href="#">Empresas</a></li>
+            <li><a class="nav-item" href="#">Areas</a></li>
+            <li><a class="nav-item" href="#">Visitas</a></li>
+            <li><a class="nav-item" href="#">Relatórios</a></li>
+          </ul>
+        </div>
+        <div class="one columns">
+          <a class="sair" href="index.html">sair</a>
+        </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container form">
+      <div class="row form">
+        <div class="one-half column"><label for="input">Razão Social</label><input class="input dados effect-1 "  type="text" name="" value=""></div>
+        <div class="one-half column"><label for="input">Nome Fantasia</label><input class="input dados effect-1 "  type="text" name="" value=""></div>
+      </div>
+      <div class="row">
+        <div class="one-third column"><label for="input">Endereço</label><input class="input dados effect-1 "  type="text" name="" value=""></div>
+        <div class="one-third column"><label for="input">Complemento</label><input class="input dados effect-1 "  type="text" name="" value=""></div>
+        <div class="one-third column"><label for="input">Bairro</label><input class="input dados effect-1 "  type="text" name="" value=""></div>
+      </div>
+      <div class="row">
+        <div class="three columns"><label for="input">CEP</label><input class="input dados effect-1 "  name="cep" onkeypress="mascara(this, '#####-###')" maxlength="9" pattern="[0-9]+$" type="text" value=""></div>
+        <div class="two columns"><label for="input">UF</label><input class="input dados effect-1 uf"  maxlength="2"  type="text" name="" value=""></div>
+        <div class="four columns"><label for="input">TELEFONE</label><input class="input dados effect-1 "  name="tel" onkeypress="mascara(this, '## #####-####')" maxlength="13" pattern="[0-9]+$" type="text"  value=""></div>
+        <div class="three columns"><a class="telmais" href="#">adicionar outro telefone</a></div>
+      </div>
+      <div class="row">
+        <div class="one-third column"><label for="input">Cnpj</label><input class="input dados effect-1 "onkeypress="mascara(this, '###.###.##-##')" maxlength="13" pattern="[0-9]+$"  type="text" name="" value=""></div>
+        <div class="one-third column"><label for="input">Inscritura Estadual</label><input class="input dados effect-1 "  type="text" name="" value=""></div>
+        <div class="one-third column"><label for="input">Licença Sanitária</label><input class="input dados effect-1 "  type="text" name="" value=""></div>
+      </div>
+
+    <div class="row">
+      <div class="one-third column u-pull-right">
+        <div class="btndiv">
+          <a class="cancelar" href="">cancelar</a>
+          <a class="confirmar" href="confirmar">Confirmar</a>
+        </div>
+      </div>
+    </div>
+</div>
+  </div>
+</div>
+
+
+<!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
