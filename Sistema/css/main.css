@@ -24,7 +24,21 @@
   .menu{
     Color:white;
     font-family: sans-serif;
+    display: none;
   }
+  .menucel ul {
+      text-decoration: none;
+      list-style: none;
+      text-align: center;
+  }
+  .menucel li:focus {
+    background-color: #3b627f;
+    color: white !important;
+}
+.menucel ul li a.nav-item:hover {
+    color: white;
+}
+
   .nav-item{
     text-decoration: none;
     color: white;
@@ -43,6 +57,13 @@
   .nav-item:hover::after{
     width: 100%;
   }
+  .menucel {
+    background-color: #69aee1;
+}
+.menucel ul, .menucel li{
+  margin-bottom: 0;
+  padding: 10px;
+}
   .metade {
       width: 50%;
       height: auto;
@@ -118,6 +139,7 @@
       border-radius: 3px;
       box-sizing: border-box;
       margin-left: -10px;
+      display: none;
   }
   a.senha{
     text-decoration: none;
@@ -143,8 +165,43 @@
     float: left;
   }
   .section.table{
-    display: none;
+    background-color: white;
+    z-index: 1;
+    /* display: none; */
+    position: fixed;
   }
+  .nomecel{
+    float: left;
+    text-align: center;
+    width: 60%;
+    line-height: 35px;
+    font-weight: 700;
+    color: white;
+}
+  .menucelular{
+    width: 20%;
+  }
+  .menucelular img{
+    width: 40%;
+    margin-left: 30%;
+    -webkit-filter: invert(100%); filter: invert(100%);
+  }
+  .menucelular2  {
+    width: 20%;
+    margin-top: 10px;
+    color: black;
+}
+.nomecel.tableform {
+    color: black;
+    line-height: 55px;
+}
+  .menucelular2 img {
+    width: 42%;
+    margin-left: 30%;
+}
+  .menucelular.tableform {
+    -webkit-filter: invert(0%); filter: invert(0%);
+}
   .section.form {
       width: 100%;
       background-color: #70B9EF;
@@ -157,7 +214,7 @@
       margin-top: 40px;
   }
   .container.form{
-    margin-top: 50px;
+    margin-top: 10px;
   }
   .section.table{
     height: 100vh;
@@ -178,11 +235,12 @@
       margin-top: 65px;
   }
   .logo {
-      color: #70b9ef;
-      margin-left: 30px;
+    display: none;
+      color: red;
       margin-top: 50px;
       font-family: sans-serif;
       font-weight: 700;
+      text-align: center;
   }
   input.dados {
       font-size: 20px;
@@ -277,6 +335,9 @@
   thead tr:hover {
       background-color: white;
   }
+  .clearfix{
+    clear: right;
+  }
   label {
       color: white;
       font-family: sans-serif;
@@ -311,6 +372,10 @@
       background-image: url(../images/bg.png);
       background-repeat: no-repeat;
   }
+
+  .clearfix {
+    clear: right;
+}
   .menu ul li{
     display: inline-block;
     margin-left: 40px;
@@ -318,6 +383,20 @@
   .menu ul{
     display: inline-block;
   }
+  a.sair{
+    display: block;
+  }
+  .container.form{
+    margin-top: 50px;
+  }
+  .logo {
+      color: #70b9ef;
+      margin-left: 30px;
+      margin-top: 50px;
+      font-family: sans-serif;
+      font-weight: 700;
+  }
+
 }
 
 /* Larger than tablet */
