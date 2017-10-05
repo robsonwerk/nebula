@@ -2,7 +2,7 @@
 /* Mobile first queries */
 
 /* Larger than mobile */
-@media (min-width: 400px) {
+@media (min-width: 200px) {
 
 
   .menu ul li {
@@ -191,6 +191,9 @@
     margin-top: 10px;
     color: black;
 }
+#menucel {
+    display: none;
+}
 .nomecel.tableform {
     color: black;
     line-height: 55px;
@@ -358,7 +361,7 @@
 }
 
 /* Larger than phablet */
-@media (min-width: 550px) {
+@media (min-width: 800px) {
 
   .section.table{
     width: 40%;
@@ -397,13 +400,57 @@
       font-weight: 700;
   }
 
+  .section.table {
+      background-color: white;
+      z-index: 1;
+      /* display: none; */
+      position: relative;
+  }
+  .row.rowcelular {
+    display: none;
+}
+.menu {
+    Color: white;
+    font-family: sans-serif;
+    display: block;
+}
+.u-pull-left.nomecel.tableform {
+    display: none;
+}
+.u-pull-left.menucelular2.tableform {
+    display: none;
+}
+.logo {
+    display: block;
+    color: #70b9ef;
+    margin-top: 50px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+}
+/* Larger than tablet */
+@media (min-width: 200px) {
+  .section.form {
+    height: 100vh;
+}
+}
+@media (min-width: 550px) {
+  .section.form {
+    height: 100vh;
+}
 }
 
-/* Larger than tablet */
-@media (min-width: 750px) {}
-
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+  .section.form {
+    height: 100vh;
+}
+}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  .section.form {
+    height: 100vh;
+}
+}

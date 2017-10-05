@@ -50,7 +50,8 @@
    }
    }
    </script>
-
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="js/main.js"> </script>
 </head>
 <body>
 
@@ -63,7 +64,7 @@
       Auditory
     </div>
     <div class="u-pull-left menucelular2 tableform">
-      <a class="menucelopen "><img src="images/left-arrow.png" alt=""></a>
+      <a class="menucelopen "><img class="clicklista"  src="images/left-arrow.png" alt=""></a>
     </div>
     <div class="u-pull-left nomecel tableform">
       auditory
@@ -151,7 +152,7 @@
   </div>
   <div class="section form">
     <div class="container form">
-      <div class="row">
+      <div class="row ">
         <div class="eleven columns">
                 <nav class="menu">
                   <ul>
@@ -169,20 +170,20 @@
 
         </div>
       </div>
-      <div class="row">
-      <div class="u-pull-left menucelular">
-        <a class="menucelopen "><img src="images/002-shop.png" alt=""></a>
+      <div class="row rowcelular">
+      <div class="u-pull-left menucelular" >
+        <a class="menucelopen "><img class="clicklista" src="images/002-shop.png" alt=""></a>
       </div>
       <div class="nomecel">
         auditory
       </div>
-      <div class="u-pull-right menucelular">
-        <a class="menucelopen"><img src="images/001-menu.png" alt=""></a>
+      <div class="u-pull-right menucelular" >
+        <a class="menucelopen " ><img class="click" src="images/001-menu.png" alt=""></a>
       </div>
       <div class="clearfix"></div>
 
     </div>
-      <div class="menucel ">
+      <div class="menucel" id="menucel">
             <ul>
             <li><a class="nav-item" href="#">Empresas</a></li>
             <li><a class="nav-item" href="#">Areas</a></li>
@@ -229,4 +230,16 @@
 <!-- End Document
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+<script>
+
+$(".click").click(function(){
+  $('#menucel').slideToggle('slow');
+})
+$(".clicklista").click(function(){
+  $('.section.table').toggle('slide');
+})
+$(".clickseta").click(function(){
+  $('.section.table').toggle('slide');
+})
+</script>
 </html>
