@@ -4,6 +4,47 @@
 /* Larger than mobile */
 @media (min-width: 200px) {
 
+  .slide-in {
+    animation: slide-in 1.75s ease ;
+  }
+
+  .slide-out {
+    animation: slide-out 1.75s ease ;
+  }
+
+  @keyframes slide-out {
+    0% {
+      transform: translate(-120%);
+    }
+    25% {
+      transform: translate(-120%) scale(0.8);
+    }
+    75% {
+      transform: scale(0.8);
+      transition-timing-function: ease-out;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes slide-in {
+    25% {
+      transform: scale(0.8);
+    }
+    75% {
+      transform: translate(120%) scale(0.8);
+      transition-timing-function: ease-out;
+    }
+    100% {
+      transform: translate(120%) scale(1);
+    }
+  }
+
+
+
+
+
 
   .menu ul li {
     display: block;
@@ -54,8 +95,33 @@
     background: white;
     transition: width .3s;
   }
+  .nav-item.visitas::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #70b8ef;
+    transition: width .3s;
+  }
   .nav-item:hover::after{
     width: 100%;
+  }
+
+  .active::after{
+    content: '';
+    display: block;
+    width: 100% !important;
+    height: 2px;
+    background: #70b8ef;
+    transition: width .3s;
+  }
+  .active2::after{
+    content: '';
+    display: block;
+    width: 100% !important;
+    height: 2px;
+    background: white;
+    transition: width .3s;
   }
   .menucel {
     background-color: #69aee1;
@@ -111,6 +177,9 @@
       color: white;
       font-size: 20px;
   }
+  .paddingrequisito{
+        padding: 0px 150px;
+  }
   button.login:hover {
       -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
@@ -119,6 +188,9 @@
       color: white;
       font-size: 20px;
   }
+  .conformidade select {
+    font-size: 16px;
+}
   a.sair:hover {
       -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
@@ -130,6 +202,7 @@
     padding: 0px 10px;
   }
   a.sair {
+    text-align: center;
       color: white;
       text-decoration: none;
       font-weight: 300;
@@ -164,6 +237,9 @@
   .section{
     float: left;
   }
+  th:last-child, td:last-child {
+    padding-right: 25px;
+}
   .section.table{
     background-color: white;
     z-index: 1;
@@ -214,14 +290,17 @@
       background-repeat: no-repeat;
   }
   .row.form {
-      margin-top: 40px;
-  }
+          margin-top: -12px;
+  }.row.form.visitas {
+    margin-top: 53px;
+}
   .container.form{
     margin-top: 10px;
   }
   .section.table{
     height: 100vh;
     overflow: scroll;
+        width: 100%;
   }
   /* Let's get this party started */
   ::-webkit-scrollbar {
@@ -244,6 +323,13 @@
       font-family: sans-serif;
       font-weight: 700;
       text-align: center;
+  }
+  .checktext{display: none}
+  .block{
+    display: block !important;
+  }
+  .mudacor{
+    color:red !important;
   }
   input.dados {
       font-size: 20px;
@@ -278,6 +364,7 @@
     text-decoration: none;
     color: white;
       font-family: sans-serif;
+    font-size: 13px;
   }
   input.dados:focus{
     outline: 3px solid #4689b9;
@@ -347,7 +434,7 @@
       font-weight: 500;
   }
   .btndiv {
-      margin-top: 135px;
+      margin-top: 15px;
   }
   .uf{
     text-transform: uppercase;
@@ -428,6 +515,53 @@
     font-weight: 700;
     text-align: left;
 }
+.section.form.visitas {
+    width: 30% !important;
+}
+.section.table.banner.visitas {
+    width: 70%;
+}
+.logo.visitas{
+  margin-top: 0;
+}
+a.nav-item.visitas{
+    color: #70B9F5;
+}
+input[type=date] {
+    height: 42px;
+    padding: 6px 10px;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    /* border: none; */
+    color: #b9b8b8;
+}
+td.conformidade {
+    color: #61c761;
+    font-family: sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+td.requisito {
+    color: grey;
+}
+.conformidade select {
+    border: none;
+}
+textarea.check {
+    margin-bottom: 0px !important;
+        width: 100%;
+}
+nav.menu.visitas {
+    float: right;
+    margin-top: -24px;
+}
+.row.form.visitas {
+}
+.container.form.visitas {
+    margin-left: 0px;
+}
 }
 /* Larger than tablet */
 @media (min-width: 200px) {
@@ -445,6 +579,17 @@
 @media (min-width: 1000px) {
   .section.form {
     height: 100vh;
+}
+.ten.columns.visitas {
+    margin-left: 40%;
+}
+textarea.input.dados.effect-1 {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+table.u-full-width.visitas {
+    margin-top: 27px;
 }
 }
 

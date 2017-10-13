@@ -53,7 +53,7 @@
       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script type="text/javascript" src="js/main.js"> </script>
 </head>
-<body>
+<body class="slide-out">
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -156,10 +156,10 @@
         <div class="eleven columns">
                 <nav class="menu">
                   <ul>
-                  <li><a class="nav-item" href="#">Empresas</a></li>
+                  <li><a class="nav-item active2" href="#">Empresas</a></li>
                   <li><a class="nav-item" href="#">Areas</a></li>
-                  <li><a class="nav-item" href="#">Visitas</a></li>
-                  <li><a class="nav-item" href="#">Relatórios</a></li>
+                  <li><a class="nav-item" href="visitas.html">Visitas</a></li>
+                  <li><a class="nav-item" href="check.html">Checklist</a></li>
                 </ul>
                 </nav>
           </div>
@@ -185,10 +185,10 @@
     </div>
       <div class="menucel" id="menucel">
             <ul>
-            <li><a class="nav-item" href="#">Empresas</a></li>
+            <li><a class="nav-item active2" href="#">Empresas</a></li>
             <li><a class="nav-item" href="#">Areas</a></li>
-            <li><a class="nav-item" href="#">Visitas</a></li>
-            <li><a class="nav-item" href="#">Relatórios</a></li>
+            <li><a class="nav-item " href="visitas.html">Visitas</a></li>
+            <li><a class="nav-item" href="check.html">Checklist</a></li>
             <li><a class="nav-item" href="#">Sair</a></li>
           </ul>
       </div>
@@ -206,7 +206,7 @@
         <div class="three columns"><label for="input">CEP</label><input class="input dados effect-1 "  name="cep" onkeypress="mascara(this, '#####-###')" maxlength="9" pattern="[0-9]+$" type="text" value=""></div>
         <div class="two columns"><label for="input">UF</label><input class="input dados effect-1 uf"  maxlength="2"  type="text" name="" value=""></div>
         <div class="four columns"><label for="input">TELEFONE</label><input class="input dados effect-1 "  name="tel" onkeypress="mascara(this, '## #####-####')" maxlength="13" pattern="[0-9]+$" type="text"  value=""></div>
-        <div class="three columns"><a class="telmais" href="#">adicionar outro telefone</a></div>
+        <div class="three columns"><a class="telmais" href="#">adicionar telefone</a></div>
       </div>
       <div class="row">
         <div class="one-third column"><label for="input">Cnpj</label> <input class="input dados effect-1 "onkeypress="mascara(this, '###.###.##-##')" maxlength="13" pattern="[0-9]+$"  type="text" name="" value=""> </div>
@@ -223,6 +223,8 @@
       </div>
     </div>
 </div>
+
+
   </div>
 
 

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Auditory</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script language="JavaScript">
+   /*
+   A função Mascara tera como valores no argumento os dados inseridos no input (ou no evento onkeypress)
+   onkeypress="mascara(this, '## ####-####')"
+   onkeypress = chama uma função quando uma tecla é pressionada, no exemplo acima, chama a função mascara e define os valores do argumento na função
+   O primeiro valor é o this, é o Apontador/Indicador da Mascara, o '## ####-####' é o modelo / formato da mascara
+   no exemplo acima o # indica os números, e o - (hifen) o caracter que será inserido entre os números, ou seja, no exemplo acima o telefone ficara assim: 11-4000-3562
+   para o celular de são paulo o modelo deverá ser assim: '## #####-####' [11 98563-1254]
+   para o RG '##.###.###.# [40.123.456.7]
+   para o CPF '###.###.###.##' [789.456.123.10]
+   Ou seja esta mascara tem como objetivo inserir o hifen ou espaço automáticamente quando o usuário inserir o número do celular, cpf, rg, etc
+
+   lembrando que o hifen ou qualquer outro caracter é contado tambem, como: 11-4561-6543 temos 10 números e 2 hifens, por isso o valor de maxlength será 12
+   <input type="text" name="telefone" onkeypress="mascara(this, '## ####-####')" maxlength="12">
+   neste código não é possivel inserir () ou [], apenas . (ponto), - (hifén) ou espaço
+   */
+
+   function mascara(t, mask){
+   var i = t.value.length;
+   var saida = mask.substring(1,0);
+   var texto = mask.substring(i)
+   if (texto.substring(0,1) != saida){
+   t.value += texto.substring(0,1);
+   }
+   }
+   </script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="js/main.js"> </script>
+</head>
+<body class="slide-out">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+  <div class="section table banner visitas">
+
+    <div class="container form visitas">
+      <div class="row ">
+
+      <div class="two columns">
+          <div class="logo visitas">
+          Auditory
+        </div>
+      </div>
+        <div class="ten columns visitas">
+                <nav class="menu visitas">
+                  <ul>
+                  <li><a class="nav-item visitas" href="empresas.html">Empresas</a></li>
+                  <li><a class="nav-item visitas" href="#">Areas</a></li>
+                  <li><a class="nav-item visitas active" href="#">Visitas</a></li>
+                  <li><a class="nav-item visitas" href="check.html">Checklist</a></li>
+                </ul>
+                </nav>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    <div class="u-pull-left menucelular2 tableform">
+      <a class="menucelopen "><img class="clicklista"  src="images/left-arrow.png" alt=""></a>
+    </div>
+    <div class="u-pull-left nomecel tableform">
+      auditory
+    </div>
+    <table class="u-full-width visitas">
+      <thead>
+        <tr >
+          <th class="cod-titulo">Cód</th>
+          <th>Razão Social</th>
+          <th>Nome Fantasia</th>
+          <th>Data</th>
+          <th>Observação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cod">001</td>
+          <td class="razao-social">Vale das Frutas</td>
+          <td class="nome-fantasia">Vale das Frutas</td>
+          <td class="data">San Francisco</td>
+          <td class="observacao">Lorem impsum in dolor amet lalalaa;alalfadskjfsdlfsdf</td>
+
+        </tr>
+
+
+      </tbody>
+    </table>
+  </div>
+  <div class="section form visitas">
+    <div class="container form">
+      <div class="row ">
+
+        <div class="two columns u-pull-right ">
+          <a class="sair" href="index.html">sair</a>
+        </div>
+</div>
+        </div>
+      <div class="row rowcelular">
+      <div class="u-pull-left menucelular" >
+        <a class="menucelopen "><img class="clicklista" src="images/002-shop.png" alt=""></a>
+      </div>
+      <div class="nomecel">
+        auditory
+      </div>
+      <div class="u-pull-right menucelular" >
+        <a class="menucelopen " ><img class="click" src="images/001-menu.png" alt=""></a>
+      </div>
+      <div class="clearfix"></div>
+
+    </div>
+      <div class="menucel" id="menucel">
+            <ul>
+            <li><a class="nav-item" href="empresas.html">Empresas</a></li>
+            <li><a class="nav-item" href="#">Áreas</a></li>
+            <li><a class="nav-item active" href="#">Visitas</a></li>
+            <li><a class="nav-item" href="check.html">Checklist</a></li>
+            <li><a class="nav-item" href="#">Sair</a></li>
+          </ul>
+      </div>
+    <div class="container form">
+      <div class="row form visitas">
+        <div class="twelve columns"><label for="input">Nome da Empresa</label><input class="input dados effect-1 "  type="text" name="" value=""></div>
+        <div class="twelve columns"><label for="input">Data da Visita</label><input class="input dados effect-1 "  type="date" name="" value=""></div>
+        <div class="twelve columns"><label for="input">Setor</label><input class="input dados effect-1 "  type="text" name="" value=""></div>
+        <div class="twelve columns"><label for="input">Observação</label><textarea class="input dados effect-1 " cols="30" rows="5" type="text" name="" value=""></textarea></div>
+
+      </div>
+
+
+
+
+    <div class="row">
+      <div class="one-half column u-pull-right">
+        <div class="btndiv">
+          <a class="cancelar" href="">cancelar</a>
+          <a class="confirmar" href="confirmar">Confirmar</a>
+        </div>
+      </div>
+    </div>
+</div>
+  </div>
+
+
+
+<!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+<script>
+
+$(".click").click(function(){
+  $('#menucel').slideToggle('slow');
+})
+$(".clicklista").click(function(){
+  $('.section.table').toggle('slide');
+})
+$(".clickseta").click(function(){
+  $('.section.table').toggle('slide');
+})
+</script>
+</html>
